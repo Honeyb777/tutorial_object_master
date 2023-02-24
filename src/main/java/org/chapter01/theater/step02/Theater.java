@@ -7,5 +7,7 @@ public class Theater {
         this.ticketSeller = ticketSeller;
     }
 
-    public void enter(Audience audience) { }
+    public void enter(Audience audience) {
+        ticketSeller.sellTo(audience);
+    }
 }
