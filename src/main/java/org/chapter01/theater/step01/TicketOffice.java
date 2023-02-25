@@ -1,4 +1,4 @@
-package main.java.org.chapter01.theater.setp01;
+package main.java.org.chapter01.theater.step01;
 
 import java.util.ArrayList;
 import java.util.Arrays;

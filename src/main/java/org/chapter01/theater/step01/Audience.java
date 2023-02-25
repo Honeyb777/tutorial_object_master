@@ -1,4 +1,4 @@
-package main.java.org.chapter01.theater.setp01;
+package main.java.org.chapter01.theater.step01;
 
 public class Audience {
     private Bag bag;
