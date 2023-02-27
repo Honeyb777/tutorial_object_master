@@ -11,4 +11,8 @@ public class Movie {
     public Money getFee() {
         return fee;
     }
+
+    public Money calculateMovieFee(Screening screening) {
+        return null;
+    }
 }
