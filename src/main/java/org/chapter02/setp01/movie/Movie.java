@@ -1,6 +1,6 @@
-package main.java.org.chapter02.movie;
+package main.java.org.chapter02.setp01.movie;
 
-import main.java.org.chapter02.money.Money;
+import main.java.org.chapter02.setp01.money.Money;
 
 import java.time.Duration;
 
