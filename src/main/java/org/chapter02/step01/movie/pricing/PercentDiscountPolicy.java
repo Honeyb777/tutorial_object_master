@@ -1,9 +1,9 @@
-package main.java.org.chapter02.setp01.movie.pricing;
+package main.java.org.chapter02.step01.movie.pricing;
 
-import main.java.org.chapter02.setp01.money.Money;
-import main.java.org.chapter02.setp01.movie.DiscountCondition;
-import main.java.org.chapter02.setp01.movie.DiscountPolicy;
-import main.java.org.chapter02.setp01.movie.Screening;
+import main.java.org.chapter02.step01.money.Money;
+import main.java.org.chapter02.step01.movie.DiscountCondition;
+import main.java.org.chapter02.step01.movie.DiscountPolicy;
+import main.java.org.chapter02.step01.movie.Screening;
 
 public class PercentDiscountPolicy extends DiscountPolicy {
     private double percent;

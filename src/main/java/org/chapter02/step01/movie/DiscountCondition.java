@@ -1,4 +1,4 @@
-package main.java.org.chapter02.setp01.movie;
+package main.java.org.chapter02.step01.movie;
 
 public interface DiscountCondition {
     boolean isSatisfiedBy(Screening screening);

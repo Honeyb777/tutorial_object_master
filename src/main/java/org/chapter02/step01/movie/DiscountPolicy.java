@@ -1,6 +1,6 @@
-package main.java.org.chapter02.setp01.movie;
+package main.java.org.chapter02.step01.movie;
 
-import main.java.org.chapter02.setp01.money.Money;
+import main.java.org.chapter02.step01.money.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;
