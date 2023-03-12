@@ -1,7 +1,5 @@
 package main.java.org.chapter05.step01.movie;
 
-import main.java.org.chapter04.step01.movie.DiscountConditionType;
-
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -12,25 +10,20 @@ public class DiscountCondition {
     private LocalTime startTime;
     private LocalTime endTime;
 
-    public DiscountConditionType getType() {
-        return type;
+    public boolean isSatisfiedBy(Screening screening) {
+        if (type == DiscountConditionType.PERIOD) {
+            return isSatisfiedByPeriod(screening);
+        }
+        return isSatisfiedBySequence(screening);
     }
 
-    public boolean isDiscountable(DayOfWeek dayOfWeek, LocalTime time) {
-        if (type != DiscountConditionType.PERIOD) {
-            throw new IllegalArgumentException();
-        }
-
-        return this.dayOfWeek.equals(dayOfWeek) &&
-                this.startTime.compareTo(time) <= 0 &&
-                this.endTime.compareTo(time) >= 0;
+    private boolean isSatisfiedByPeriod(Screening screening) {
+        return dayOfWeek.equals(screening.getWhenScreened().getDayOfWeek()) &&
+                startTime.compareTo(screening.getWhenScreened().toLocalTime()) <= 0 &&
+                endTime.compareTo(screening.getWhenScreened().toLocalTime()) >= 0;
     }
 
-    public boolean isDiscountable(int sequence) {
-        if (type != DiscountConditionType.SEQUENCE) {
-            throw new IllegalArgumentException();
-        }
-
-        return this.sequence == sequence;
+    private boolean isSatisfiedBySequence(Screening screening) {
+        return sequence == screening.getSequence();
     }
 }
