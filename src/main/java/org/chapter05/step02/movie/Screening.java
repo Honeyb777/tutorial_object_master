@@ -1,6 +1,6 @@
-package main.java.org.chapter05.step01.movie;
+package main.java.org.chapter05.step02.movie;
 
-import main.java.org.chapter05.step01.money.Money;
+import main.java.org.chapter05.step02.money.Money;
 
 import java.time.LocalDateTime;
 
