@@ -3,7 +3,7 @@ package main.java.org.chapter05.step03.movie;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-public class PeriodCondition {
+public class PeriodCondition implements DiscountCondition {
     private DayOfWeek dayOfWeek;
     private LocalTime startTime;
     private LocalTime endTime;

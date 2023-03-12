@@ -1,6 +1,6 @@
 package main.java.org.chapter05.step03.movie;
 
-public class SequenceCondition {
+public class SequenceCondition implements DiscountCondition {
     private int sequence;
 
     public SequenceCondition(int sequence) {
@@ -11,5 +11,3 @@ public class SequenceCondition {
         return sequence == screening.getSequence();
     }
 }
-
-
