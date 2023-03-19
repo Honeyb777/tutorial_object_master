@@ -1,6 +1,6 @@
 package main.java.org.chapter05.step05.movie;
 
-import main.java.org.chapter05.step04.money.Money;
+import main.java.org.chapter05.step05.money.Money;
 
 import java.time.Duration;
 
