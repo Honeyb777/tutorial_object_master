@@ -7,7 +7,7 @@ public class TicketOffice {
     private Long amount;
     private List<Ticket> tickets = new ArrayList<>();
 
-    public Ticket getTickets() {
+    public Ticket getTicket() {
         return tickets.remove(0);
     }
 
