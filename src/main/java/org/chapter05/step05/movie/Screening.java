@@ -9,12 +9,8 @@ public class Screening {
     private int sequence;
     private LocalDateTime whenScreened;
 
-    public Reservation reserve(Customer customer, int audienceCount) {
-        return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
-    }
-
-    Money calculateFee(int audienceCount) {
-        return movie.calculateMovieFee(this).times(audienceCount);
+    public Movie getMovie() {
+        return movie;
     }
 
     public LocalDateTime getWhenScreened() {
